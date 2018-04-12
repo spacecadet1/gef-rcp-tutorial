@@ -1,0 +1,36 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.itemis.gef.tutorial.mindmap</groupId>
+	<artifactId>com.itemis.gef.tutorial.mindmap.target</artifactId>
+	<version>3.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>com.itemis.gef.tutorial.mindmap</groupId>
+		<artifactId>com.itemis.gef.tutorial.mindmap.releng</artifactId>
+		<version>3.0.0-SNAPSHOT</version>
+	</parent>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<target>
+						<artifact>
+							<groupId>${project.groupId}</groupId>
+							<artifactId>${project.artifactId}</artifactId>
+							<version>${project.version}</version>
+							<classifier>mindmap</classifier>
+						</artifact>
+					</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+
+

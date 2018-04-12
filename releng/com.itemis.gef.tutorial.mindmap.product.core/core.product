@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Mindmap Core Edition" uid="core" id="com.itemis.gef.tutorial.mindmap.core" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="3.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-clearPersistedState
+      </programArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <launcher>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <macos include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</macos>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="com.itemis.gef.tutorial.mindmap.feature" version="3.0.0.qualifier"/>
+      <feature id="org.eclipse.emf.ecore"/>
+      <feature id="org.eclipse.emf.common"/>
+      <feature id="org.eclipse.e4.rcp"/>
+      <feature id="org.eclipse.gef.mvc.fx"/>
+      <feature id="org.eclipse.gef.geometry"/>
+      <feature id="org.eclipse.gef.geometry.convert.fx"/>
+      <feature id="org.eclipse.fx.runtime.min.feature"/>
+      <feature id="org.eclipse.gef.fx.swt"/>
+      <feature id="org.eclipse.gef.common"/>
+      <feature id="org.eclipse.gef.fx"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <property name="orgi.instance.area.default" value="@user.home/.mindmap30" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

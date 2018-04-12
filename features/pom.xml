@@ -1,0 +1,17 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.itemis.gef.tutorial.mindmap</groupId>
+    <artifactId>com.itemis.gef.tutorial.mindmap.features</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.itemis.gef.tutorial.mindmap</groupId>
+        <artifactId>com.itemis.gef.tutorial.mindmap.root</artifactId>
+        <version>3.0.0-SNAPSHOT</version>
+    </parent>
+
+    <modules>
+        <module>com.itemis.gef.tutorial.mindmap.feature</module>
+    </modules>
+</project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="core"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="Mindmap Core Edition">
+         <property
+               name="applicationXMI"
+               value="com.itemis.gef.tutorial.mindmap/Application.e4xmi">
+         </property>
+         <property
+               name="appName"
+               value="Mindmap Core Edition">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
